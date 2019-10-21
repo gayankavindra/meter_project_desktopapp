@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDA20F9B-CBFD-4BE8-9281-C78F8AA53BBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewAccountControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddNewAccountControl.Designer.cs">
+      <DependentUpon>AddNewAccountControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BillHistoryControl.Designer.cs">
+      <DependentUpon>BillHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBillInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckBillInfoControl.Designer.cs">
+      <DependentUpon>CheckBillInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsumerControl.Designer.cs">
+      <DependentUpon>ConsumerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="learning_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>learning_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayBillControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayBillControl.Designer.cs">
+      <DependentUpon>PayBillControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PaymentHistoryControl.Designer.cs">
+      <DependentUpon>PaymentHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PwdChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PwdChangeForm.Designer.cs">
+      <DependentUpon>PwdChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignUpControl.Designer.cs">
+      <DependentUpon>SignUpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdminDashboard.Designer.cs">
+      <DependentUpon>SuperAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewAccountControl.resx">
+      <DependentUpon>AddNewAccountControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillHistoryControl.resx">
+      <DependentUpon>BillHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckBillInfoControl.resx">
+      <DependentUpon>CheckBillInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsumerControl.resx">
+      <DependentUpon>ConsumerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayBillControl.resx">
+      <DependentUpon>PayBillControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentHistoryControl.resx">
+      <DependentUpon>PaymentHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PwdChangeForm.resx">
+      <DependentUpon>PwdChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpControl.resx">
+      <DependentUpon>SignUpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdminDashboard.resx">
+      <DependentUpon>SuperAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="learning_dbDataSet.xsc">
+      <DependentUpon>learning_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="learning_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>learning_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="learning_dbDataSet.xss">
+      <DependentUpon>learning_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
