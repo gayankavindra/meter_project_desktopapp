@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
 
         private void button18_Click(object sender, EventArgs e)
         {
-            CheckBillInfoControl checkbillinfoobj = new CheckBillInfoControl();
+            MeterInfoControl checkbillinfoobj = new MeterInfoControl();
             AddNewPanel(checkbillinfoobj);
         }
 
@@ -119,6 +119,17 @@ namespace WindowsFormsApp1
         {
             AddNewAccountControl AddNewAccountobj = new AddNewAccountControl();
             AddNewPanel(AddNewAccountobj);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            complaint complaintobj = new complaint();
+            AddNewPanel(complaintobj);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

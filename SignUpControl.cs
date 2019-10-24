@@ -13,9 +13,9 @@ namespace WindowsFormsApp1
 {
     public partial class SignUpControl : UserControl
     {
-       
-        SqlConnection conn = new SqlConnection(@"Data Source = DELL\SQLEXPRESS; Initial Catalog = larameter;Integrated Security=True;");
-       
+
+        SqlConnection conn = new SqlConnection(@"Data Source = DELL\SQLEXPRESS; Initial Catalog =meter;Integrated Security=True;");
+
         public SignUpControl()
         {
             InitializeComponent();
@@ -28,8 +28,17 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
-           
+
+            nic.Text= String.Empty;
+            password1.Text= String.Empty;
+            name.Text=String.Empty;
+            staffno.Text= String.Empty;
+            contact.Text= String.Empty;
+            mail.Text= String.Empty;
+
+
+
+
         }
 
         private void staffno_TextChanged(object sender, EventArgs e)
@@ -45,19 +54,24 @@ namespace WindowsFormsApp1
             cmd.CommandType = CommandType.Text;
             cmd.Connection = conn;
             // MessageBox.Show("St");
-            if (radioButton3.Checked)
+
+            if (password1.Text != password2.Text) {
+                MessageBox.Show("Entered 2 different passwords");
+            }
+
+            else if (radioButton3.Checked)
             {
-                cmd.CommandText = "INSERT into users (nic,password,name,staffno,contact,usertype) values('" + nic.Text + "','" + password.Text + "','" + name.Text + "','" + staffno.Text + "','" + contact.Text + "','admin ')";
+                cmd.CommandText = "INSERT into Users (NIC,Password,Name,StaffNo,Contact,email,Usertype) values('" + nic.Text + "','" + password1.Text + "','" + name.Text + "','" + staffno.Text + "','" + contact.Text + "','" + mail.Text + "','admin ')";
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Data inserted");
             }
-            else if(radioButton4.Checked){
-                cmd.CommandText = "INSERT into users (nic,password,name,staffno,contact,usertype) values('" + nic.Text + "','" + password.Text + "','" + name.Text + "','" + staffno.Text + "','" + contact.Text + "','superadmin ')";
+            else if (radioButton4.Checked) {
+                cmd.CommandText = "INSERT into Users (NIC,Password,Name,StaffNo,Contact,email,Usertype) values('" + nic.Text + "','" + password1.Text + "','" + name.Text + "','" + staffno.Text + "','" + contact.Text + "','" + mail.Text + "','superadmin ')";
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Data inserted");
             }
             else
-            MessageBox.Show("Please select user type");
+                MessageBox.Show("Please select user type");
 
            
             
@@ -75,8 +89,8 @@ namespace WindowsFormsApp1
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
             cmd.Connection = conn;
-           // MessageBox.Show("St");
-            cmd.CommandText = "select * from users";
+            // MessageBox.Show("St");
+            cmd.CommandText = "select * from Users";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -94,6 +108,11 @@ namespace WindowsFormsApp1
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("If you don't have NIC use Passport Number or Birth Certificate Number");
         }
     }
 }

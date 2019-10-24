@@ -32,8 +32,8 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
+            this.password2 = new System.Windows.Forms.TextBox();
+            this.password1 = new System.Windows.Forms.TextBox();
             this.contact = new System.Windows.Forms.TextBox();
             this.staffno = new System.Windows.Forms.TextBox();
             this.name = new System.Windows.Forms.TextBox();
@@ -47,16 +47,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.mail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // backbutton
             // 
-            this.backbutton.Location = new System.Drawing.Point(281, 502);
+            this.backbutton.Location = new System.Drawing.Point(251, 512);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(124, 43);
             this.backbutton.TabIndex = 67;
-            this.backbutton.Text = "Back";
+            this.backbutton.Text = "Clear";
             this.backbutton.UseVisualStyleBackColor = true;
             this.backbutton.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -64,7 +66,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.radioButton4.Location = new System.Drawing.Point(301, 433);
+            this.radioButton4.Location = new System.Drawing.Point(301, 447);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(119, 24);
@@ -77,7 +79,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.radioButton3.Location = new System.Drawing.Point(153, 433);
+            this.radioButton3.Location = new System.Drawing.Point(153, 447);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(72, 24);
@@ -97,24 +99,25 @@
             this.label9.Size = new System.Drawing.Size(35, 20);
             this.label9.TabIndex = 64;
             this.label9.Text = "hint";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // textBox12
+            // password2
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox12.Location = new System.Drawing.Point(281, 349);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(148, 26);
-            this.textBox12.TabIndex = 63;
+            this.password2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.password2.Location = new System.Drawing.Point(281, 349);
+            this.password2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.password2.Name = "password2";
+            this.password2.Size = new System.Drawing.Size(148, 26);
+            this.password2.TabIndex = 63;
             // 
-            // password
+            // password1
             // 
-            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.password.Location = new System.Drawing.Point(281, 301);
-            this.password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(148, 26);
-            this.password.TabIndex = 62;
+            this.password1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.password1.Location = new System.Drawing.Point(281, 301);
+            this.password1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.password1.Name = "password1";
+            this.password1.Size = new System.Drawing.Size(148, 26);
+            this.password1.TabIndex = 62;
             // 
             // contact
             // 
@@ -157,7 +160,7 @@
             // 
             // registerbutton
             // 
-            this.registerbutton.Location = new System.Drawing.Point(101, 502);
+            this.registerbutton.Location = new System.Drawing.Point(101, 512);
             this.registerbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.registerbutton.Name = "registerbutton";
             this.registerbutton.Size = new System.Drawing.Size(124, 43);
@@ -170,7 +173,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(33, 407);
+            this.label7.Location = new System.Drawing.Point(33, 451);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 20);
@@ -253,17 +256,39 @@
             this.dataGridView1.TabIndex = 69;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label8.Location = new System.Drawing.Point(25, 401);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 20);
+            this.label8.TabIndex = 70;
+            this.label8.Text = "Email";
+            // 
+            // mail
+            // 
+            this.mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.mail.Location = new System.Drawing.Point(281, 401);
+            this.mail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mail.Name = "mail";
+            this.mail.Size = new System.Drawing.Size(148, 26);
+            this.mail.TabIndex = 71;
+            // 
             // SignUpControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.mail);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.backbutton);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.password);
+            this.Controls.Add(this.password2);
+            this.Controls.Add(this.password1);
             this.Controls.Add(this.contact);
             this.Controls.Add(this.staffno);
             this.Controls.Add(this.name);
@@ -291,8 +316,8 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.TextBox password2;
+        private System.Windows.Forms.TextBox password1;
         private System.Windows.Forms.TextBox contact;
         private System.Windows.Forms.TextBox staffno;
         private System.Windows.Forms.TextBox name;
@@ -306,5 +331,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox mail;
     }
 }

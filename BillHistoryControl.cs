@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class BillHistoryControl : UserControl
     {
-        SqlConnection conn = new SqlConnection(@"Data Source = DELL\SQLEXPRESS; Initial Catalog = larameter;Integrated Security=True;");
+        SqlConnection conn = new SqlConnection(@"Data Source = DELL\SQLEXPRESS; Initial Catalog = meter;Integrated Security=True;");
 
         public BillHistoryControl()
         {
@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
             cmd.CommandType = CommandType.Text;
             cmd.Connection = conn;
             // MessageBox.Show("St");
-            cmd.CommandText = "select * from bill";
+            cmd.CommandText = "select * from Bill";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
             cmd.CommandType = CommandType.Text;
             cmd.Connection = conn;
             //MessageBox.Show("St");
-            cmd.CommandText = "select * from bill where accountno like '"+textBox7.Text+"' ";
+            cmd.CommandText = "select * from Bill where AccountNo like '"+textBox7.Text+"' ";
             cmd.ExecuteNonQuery();
            // MessageBox.Show("fk");
             DataTable dt = new DataTable();
@@ -56,6 +56,11 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = dt;
             //MessageBox.Show("Success");
             conn.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

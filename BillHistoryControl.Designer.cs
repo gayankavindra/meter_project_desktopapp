@@ -71,10 +71,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 103);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 103);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(962, 496);
+            this.dataGridView1.Size = new System.Drawing.Size(555, 496);
             this.dataGridView1.TabIndex = 43;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // BillHistoryControl
             // 

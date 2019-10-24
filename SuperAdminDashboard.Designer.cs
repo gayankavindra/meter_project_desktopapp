@@ -63,10 +63,13 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button19 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panelControls.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -302,10 +305,11 @@
             this.button12.TabIndex = 54;
             this.button12.Text = "View Complaints";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Azure;
+            this.panel2.BackColor = System.Drawing.Color.Yellow;
             this.panel2.Controls.Add(this.LabelDat);
             this.panel2.Controls.Add(this.LabelTim);
             this.panel2.Controls.Add(this.label4);
@@ -318,6 +322,8 @@
             // panelControls
             // 
             this.panelControls.BackColor = System.Drawing.Color.Bisque;
+            this.panelControls.Controls.Add(this.label3);
+            this.panelControls.Controls.Add(this.label2);
             this.panelControls.Location = new System.Drawing.Point(264, 111);
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(1091, 645);
@@ -326,7 +332,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(19, 16);
@@ -408,13 +414,13 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(219, 43);
             this.button18.TabIndex = 43;
-            this.button18.Text = "Account Information";
+            this.button18.Text = "Meter Information";
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pictureBox4.Location = new System.Drawing.Point(8, 16);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(245, 744);
@@ -438,6 +444,27 @@
             this.button19.Text = "Add New Account ";
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(23, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 33);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "WELCOME TO";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Papyrus", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(68, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(954, 126);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Super Admin Dashboard";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // SuperAdminDashboard
             // 
@@ -480,6 +507,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelControls.ResumeLayout(false);
+            this.panelControls.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
@@ -521,5 +550,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
