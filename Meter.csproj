@@ -64,6 +64,12 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="pwdchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwdchange.Designer.cs">
+      <DependentUpon>pwdchange.cs</DependentUpon>
+    </Compile>
     <Compile Include="MeterInfoControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,12 +104,6 @@
     </Compile>
     <Compile Include="PaymentHistoryControl.Designer.cs">
       <DependentUpon>PaymentHistoryControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PwdChangeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PwdChangeForm.Designer.cs">
-      <DependentUpon>PwdChangeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SignUpControl.cs">
       <SubType>UserControl</SubType>
@@ -155,8 +155,8 @@
     <EmbeddedResource Include="PaymentHistoryControl.resx">
       <DependentUpon>PaymentHistoryControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PwdChangeForm.resx">
-      <DependentUpon>PwdChangeForm.cs</DependentUpon>
+    <EmbeddedResource Include="pwdchange.resx">
+      <DependentUpon>pwdchange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReadingControl.resx">
       <DependentUpon>ReadingControl.cs</DependentUpon>

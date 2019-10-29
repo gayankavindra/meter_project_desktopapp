@@ -118,12 +118,52 @@ namespace WindowsFormsApp1
 
 
 
-            SqlConnection conn = new SqlConnection(@"Data Source = DELL\SQLEXPRESS; Initial Catalog = larameter;Integrated Security=True;");
+            SqlConnection conn = new SqlConnection(@"Data Source = DELL\SQLEXPRESS; Initial Catalog =meter;Integrated Security=True;");
             //
             conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("Select* from users WHERE nic = '" + textBox1.Text + "'AND password = '" + password.Text + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
+
+
+            if (!superadmin.Checked && !admin.Checked)
+            {
+                MessageBox.Show("Please select user type");
+
+            }
+            else if (superadmin.Checked)
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("Select* from Users WHERE Usertype like 'superadmin' and NIC = '" + textBox1.Text + "'AND Password = '" + password.Text + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows.Count == 1 )
+                {
+                    this.Hide();
+                    SuperAdminDashboard Dashboardobj = new SuperAdminDashboard();
+                    Dashboardobj.Show();
+                  //  MessageBox.Show("P");
+
+                }
+                else
+                {
+                    MessageBox.Show("Please enter valid username and password");
+                };
+            }
+            else if (admin.Checked)
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("Select* from Users WHERE Usertype like 'admin' and NIC = '" + textBox1.Text + "'AND Password = '" + password.Text + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                
+                if (dt.Rows.Count == 1 )
+                {
+                    this.Hide();
+                    AdminDashboard Dashboardobj = new AdminDashboard();
+                    Dashboardobj.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Please enter valid username and password");
+                };
+            }
+           
 
 
 
@@ -137,30 +177,11 @@ namespace WindowsFormsApp1
 
 
 
-            if (!superadmin.Checked && !admin.Checked)
-            {
-                MessageBox.Show("Please select user type");
+            
+            
 
-            }
-            else if (dt.Rows.Count==1 && superadmin.Checked)
-            { 
-                this.Hide();
-                SuperAdminDashboard Dashboardobj = new SuperAdminDashboard();
-                Dashboardobj.Show();
 
-            }
-
-         else if (dt.Rows.Count == 1 && admin.Checked)
-         {
-            this.Hide();
-            AdminDashboard Dashboardobj = new AdminDashboard();
-            Dashboardobj.Show();
-         }
-
-             else
-             {
-           MessageBox.Show("Please enter valid username and password");
-             };
+           
 
 
 
@@ -212,9 +233,11 @@ namespace WindowsFormsApp1
 
         private void label8_Click(object sender, EventArgs e)
         {
-            PwdChangeForm obj = new PwdChangeForm();
-            this.Hide();
+            aform obj = new aform();
+            
             obj.Show();
+
+
         }
     }
 }

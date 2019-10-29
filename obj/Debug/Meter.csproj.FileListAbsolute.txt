@@ -14,9 +14,9 @@ C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsAp
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SignUpControl.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BillHistoryControl.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PaymentHistoryControl.resources
-C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PwdChangeForm.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddNewAccountControl.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.complaint.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MeterInfoControl.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminDashboard.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ReadingControl.resources
+C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.aform.resources

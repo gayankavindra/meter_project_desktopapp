@@ -328,7 +328,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Papyrus", 10F);
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(921, 0);
+            this.label3.Location = new System.Drawing.Point(33, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 22);
             this.label3.TabIndex = 1;
@@ -488,7 +488,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1366, 472);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button10);

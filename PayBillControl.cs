@@ -95,7 +95,7 @@ namespace WindowsFormsApp1
             int z = x - y;
 
             // label7.Text = z.ToString();
-            label7.Text = "4490";
+            
 
             
 
@@ -111,6 +111,11 @@ namespace WindowsFormsApp1
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

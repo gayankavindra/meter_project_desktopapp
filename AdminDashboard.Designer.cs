@@ -51,6 +51,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panelControls.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -148,6 +149,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Lime;
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.LabelDat);
             this.panel2.Controls.Add(this.LabelTim);
             this.panel2.Controls.Add(this.label4);
@@ -294,6 +296,18 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Papyrus", 10F);
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(42, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 22);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Admin Dashboard";
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,5 +365,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }

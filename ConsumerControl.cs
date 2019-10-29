@@ -199,7 +199,7 @@ namespace WindowsFormsApp1
 
                 cmd1.CommandText = "Update Consumer set NIC='" + nic.Text + "',Name='" + name.Text + "',Contact='" + contact.Text + "',Address='" + address.Text + "' where NIC='" + nic.Text + "'";
                 cmd1.ExecuteNonQuery();
-                MessageBox.Show("Data inserted");
+                MessageBox.Show("Data Updated");
 
                 conn.Close();
                 display_data();

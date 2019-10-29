@@ -145,7 +145,7 @@ namespace WindowsFormsApp1
 
                 cmd1.CommandText = "INSERT into Consumer (NIC,Name,Contact,Address) values('" + nic.Text + "','" + name.Text + "','" + contact.Text + "','" + address.Text + "')";
                 cmd1.ExecuteNonQuery();
-                MessageBox.Show("Data inserted");
+                MessageBox.Show("Data Updated");
 
                 conn.Close();
                 display_data();
