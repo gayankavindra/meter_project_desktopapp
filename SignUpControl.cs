@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
 
             nic.Text= String.Empty;
             password1.Text= String.Empty;
+            password2.Text = String.Empty;
             name.Text=String.Empty;
             staffno.Text= String.Empty;
             contact.Text= String.Empty;

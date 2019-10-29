@@ -43,16 +43,20 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.type = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Teal;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(136, 586);
+            this.button4.Location = new System.Drawing.Point(549, 46);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 43);
+            this.button4.Size = new System.Drawing.Size(102, 32);
             this.button4.TabIndex = 63;
             this.button4.Text = "Edit";
             this.button4.UseVisualStyleBackColor = false;
@@ -62,7 +66,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.DarkGreen;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(71, 537);
+            this.button2.Location = new System.Drawing.Point(136, 556);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 43);
             this.button2.TabIndex = 62;
@@ -72,7 +76,7 @@
             // 
             // address
             // 
-            this.address.Location = new System.Drawing.Point(71, 363);
+            this.address.Location = new System.Drawing.Point(123, 377);
             this.address.Multiline = true;
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(288, 155);
@@ -80,16 +84,16 @@
             // 
             // contact
             // 
-            this.contact.Location = new System.Drawing.Point(164, 161);
+            this.contact.Location = new System.Drawing.Point(216, 156);
             this.contact.Multiline = true;
             this.contact.Name = "contact";
-            this.contact.Size = new System.Drawing.Size(168, 35);
+            this.contact.Size = new System.Drawing.Size(195, 35);
             this.contact.TabIndex = 59;
             this.contact.TextChanged += new System.EventHandler(this.contact_TextChanged);
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(164, 79);
+            this.name.Location = new System.Drawing.Point(216, 95);
             this.name.Multiline = true;
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(195, 35);
@@ -98,7 +102,7 @@
             // 
             // nic
             // 
-            this.nic.Location = new System.Drawing.Point(164, 39);
+            this.nic.Location = new System.Drawing.Point(216, 46);
             this.nic.Multiline = true;
             this.nic.Name = "nic";
             this.nic.Size = new System.Drawing.Size(195, 32);
@@ -109,7 +113,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(28, 322);
+            this.label7.Location = new System.Drawing.Point(80, 336);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(151, 20);
             this.label7.TabIndex = 55;
@@ -119,7 +123,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(28, 175);
+            this.label5.Location = new System.Drawing.Point(80, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 20);
             this.label5.TabIndex = 53;
@@ -130,7 +134,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(28, 94);
+            this.label3.Location = new System.Drawing.Point(80, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 20);
             this.label3.TabIndex = 51;
@@ -141,7 +145,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(28, 51);
+            this.label1.Location = new System.Drawing.Point(80, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 50;
@@ -152,7 +156,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(28, 263);
+            this.label2.Location = new System.Drawing.Point(80, 215);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 67;
@@ -161,7 +165,7 @@
             // 
             // accountno
             // 
-            this.accountno.Location = new System.Drawing.Point(164, 248);
+            this.accountno.Location = new System.Drawing.Point(216, 215);
             this.accountno.Multiline = true;
             this.accountno.Name = "accountno";
             this.accountno.Size = new System.Drawing.Size(195, 35);
@@ -172,7 +176,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(208, 537);
+            this.button1.Location = new System.Drawing.Point(277, 556);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 43);
             this.button1.TabIndex = 69;
@@ -182,26 +186,71 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(393, 39);
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.Location = new System.Drawing.Point(445, 46);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(82, 32);
             this.button3.TabIndex = 70;
             this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(393, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(509, 94);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(656, 424);
+            this.dataGridView1.Size = new System.Drawing.Size(540, 424);
             this.dataGridView1.TabIndex = 71;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label4.Location = new System.Drawing.Point(80, 272);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 20);
+            this.label4.TabIndex = 72;
+            this.label4.Text = "Type-Comercial";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label6.Location = new System.Drawing.Point(89, 292);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 20);
+            this.label6.TabIndex = 73;
+            this.label6.Text = "(True/False)";
+            // 
+            // type
+            // 
+            this.type.Location = new System.Drawing.Point(216, 277);
+            this.type.Multiline = true;
+            this.type.Name = "type";
+            this.type.Size = new System.Drawing.Size(195, 35);
+            this.type.TabIndex = 74;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.SeaGreen;
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(670, 46);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(102, 32);
+            this.button5.TabIndex = 75;
+            this.button5.Text = "Update";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // ConsumerControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.type);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
@@ -243,5 +292,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox type;
+        private System.Windows.Forms.Button button5;
     }
 }

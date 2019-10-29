@@ -125,6 +125,12 @@
     <Compile Include="complaint.Designer.cs">
       <DependentUpon>complaint.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReadingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReadingControl.Designer.cs">
+      <DependentUpon>ReadingControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddNewAccountControl.resx">
       <DependentUpon>AddNewAccountControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PwdChangeForm.resx">
       <DependentUpon>PwdChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadingControl.resx">
+      <DependentUpon>ReadingControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpControl.resx">
       <DependentUpon>SignUpControl.cs</DependentUpon>

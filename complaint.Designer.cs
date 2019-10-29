@@ -45,6 +45,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cid = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,9 +83,9 @@
             this.label2.Location = new System.Drawing.Point(574, 64);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 20);
+            this.label2.Size = new System.Drawing.Size(101, 20);
             this.label2.TabIndex = 49;
-            this.label2.Text = "Account Number";
+            this.label2.Text = "Complaint ID";
             // 
             // button1
             // 
@@ -130,11 +131,11 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Teal;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(218, 501);
+            this.button4.Location = new System.Drawing.Point(76, 550);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 43);
+            this.button4.Size = new System.Drawing.Size(195, 43);
             this.button4.TabIndex = 78;
             this.button4.Text = "Edit";
             this.button4.UseVisualStyleBackColor = false;
@@ -210,18 +211,31 @@
             // 
             this.button3.BackColor = System.Drawing.Color.SlateBlue;
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(138, 550);
+            this.button3.Location = new System.Drawing.Point(206, 501);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(251, 43);
+            this.button3.Size = new System.Drawing.Size(136, 43);
             this.button3.TabIndex = 82;
             this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Lime;
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(277, 550);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(195, 43);
+            this.button6.TabIndex = 83;
+            this.button6.Text = "Update";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // complaint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.completed);
@@ -267,5 +281,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label cid;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button6;
     }
 }

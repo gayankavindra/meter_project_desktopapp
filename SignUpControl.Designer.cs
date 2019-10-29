@@ -54,12 +54,13 @@
             // 
             // backbutton
             // 
+            this.backbutton.BackColor = System.Drawing.Color.Red;
             this.backbutton.Location = new System.Drawing.Point(251, 512);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(124, 43);
             this.backbutton.TabIndex = 67;
             this.backbutton.Text = "Clear";
-            this.backbutton.UseVisualStyleBackColor = true;
+            this.backbutton.UseVisualStyleBackColor = false;
             this.backbutton.Click += new System.EventHandler(this.button4_Click);
             // 
             // radioButton4
@@ -160,13 +161,14 @@
             // 
             // registerbutton
             // 
+            this.registerbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.registerbutton.Location = new System.Drawing.Point(101, 512);
             this.registerbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.registerbutton.Name = "registerbutton";
             this.registerbutton.Size = new System.Drawing.Size(124, 43);
             this.registerbutton.TabIndex = 57;
             this.registerbutton.Text = "Register ";
-            this.registerbutton.UseVisualStyleBackColor = true;
+            this.registerbutton.UseVisualStyleBackColor = false;
             this.registerbutton.Click += new System.EventHandler(this.button2_Click);
             // 
             // label7

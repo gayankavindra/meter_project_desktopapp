@@ -19,3 +19,4 @@ C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsAp
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.complaint.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MeterInfoControl.resources
 C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminDashboard.resources
+C:\Users\INSPIRON 15 3542\Desktop\projects\implementation\FiMeter\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ReadingControl.resources

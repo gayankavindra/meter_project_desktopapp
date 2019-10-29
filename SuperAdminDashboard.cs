@@ -16,11 +16,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             timer1.Start();
+            
         }
 
         private void ogin_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void Panel_Paint(object sender, PaintEventArgs e)
@@ -117,6 +118,7 @@ namespace WindowsFormsApp1
 
         private void button19_Click(object sender, EventArgs e)
         {
+            //label2.Enabled = true;
             AddNewAccountControl AddNewAccountobj = new AddNewAccountControl();
             AddNewPanel(AddNewAccountobj);
         }
@@ -130,6 +132,12 @@ namespace WindowsFormsApp1
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            ReadingControl Readingobj = new ReadingControl();
+            AddNewPanel(Readingobj);
         }
     }
 }

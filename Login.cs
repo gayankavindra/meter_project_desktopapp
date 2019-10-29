@@ -120,68 +120,77 @@ namespace WindowsFormsApp1
 
             SqlConnection conn = new SqlConnection(@"Data Source = DELL\SQLEXPRESS; Initial Catalog = larameter;Integrated Security=True;");
             //
-              conn.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("Select* from users WHERE nic = '" + textBox1.Text + "'AND password = '" + password.Text + "'", conn);
-                DataTable dt = new DataTable();
-                 sda.Fill(dt);
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("Select* from users WHERE nic = '" + textBox1.Text + "'AND password = '" + password.Text + "'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+
+
+            //if (superadmin.Checked) {
+            //  SuperAdminDashboard Dashboardobj = new SuperAdminDashboard();
+            //Dashboardobj.Show();
+            //} else if (admin.Checked) {
+            //  AdminDashboard Dashboardobj = new AdminDashboard();
+            //Dashboardobj.Show();
+            ////}
+
+
+
+            if (!superadmin.Checked && !admin.Checked)
+            {
+                MessageBox.Show("Please select user type");
+
+            }
+            else if (dt.Rows.Count==1 && superadmin.Checked)
+            { 
+                this.Hide();
+                SuperAdminDashboard Dashboardobj = new SuperAdminDashboard();
+                Dashboardobj.Show();
+
+            }
+
+         else if (dt.Rows.Count == 1 && admin.Checked)
+         {
+            this.Hide();
+            AdminDashboard Dashboardobj = new AdminDashboard();
+            Dashboardobj.Show();
+         }
+
+             else
+             {
+           MessageBox.Show("Please enter valid username and password");
+             };
 
 
 
 
-          //  if (!superadmin.Checked || !admin.Checked)
-            //{
-             //   MessageBox.Show("Please select user type");
-
-           // }
-           // else if (dt.Rows.Count==1 && superadmin.Checked)
-             //   {
-               // this.Hide();
-                 SuperAdminDashboard Dashboardobj = new SuperAdminDashboard();
-                 Dashboardobj.Show();
-
-                }
-
-        //        else if (dt.Rows.Count == 1)
-          //  {
-            //    this.Hide();
-              //  AdminDashboard Dashboardobj = new AdminDashboard();
-               // Dashboardobj.Show();
-           // }
-
-          //  else
-            //    {
-              //    MessageBox.Show("Please enter valid username and password");
-               // };
 
 
 
+        //  if (radioButton1.Checked)
+        //{
+        // AdminDashboard Dashboardobj = new AdminDashboard();
+        //this.Hide();
+        //  Dashboardobj.Show();
+
+        //}
+        //else if (radioButton2.Checked)
+        // {
+        //   SuperAdminDashboard SuperDashboardobj = new SuperAdminDashboard();
+        // this.Hide();
+        //SuperDashboardobj.Show();
+
+        //}
+        //else
+        // {
+        //    MessageBox.Show("Please select User type");
+        // }
+    }
 
 
 
-
-                //  if (radioButton1.Checked)
-                //{
-                // AdminDashboard Dashboardobj = new AdminDashboard();
-                //this.Hide();
-                //  Dashboardobj.Show();
-
-                //}
-                //else if (radioButton2.Checked)
-                // {
-                //   SuperAdminDashboard SuperDashboardobj = new SuperAdminDashboard();
-                // this.Hide();
-                //SuperDashboardobj.Show();
-
-                //}
-                //else
-                // {
-                //    MessageBox.Show("Please select User type");
-                // }
-
-
-    
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+    private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

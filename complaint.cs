@@ -40,6 +40,7 @@ namespace WindowsFormsApp1
         private void complaint_Load(object sender, EventArgs e)
         {
             display_data();
+            button6.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,7 +51,7 @@ namespace WindowsFormsApp1
             cmd.CommandType = CommandType.Text;
             cmd.Connection = conn;
             //MessageBox.Show("St");
-            cmd.CommandText = "select * from Complaint where AccountNo like '" + textBox7.Text + "' ";
+            cmd.CommandText = "select * from Complaint where ComplaintID like '" + textBox7.Text + "' ";
             cmd.ExecuteNonQuery();
             // MessageBox.Show("fk");
             DataTable dt = new DataTable();
@@ -110,7 +111,14 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //edit
+            button6.Enabled = true;
+            
 
+
+            // dataGridView1.DataSource = dt;
+            //MessageBox.Show("Success");
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -126,6 +134,25 @@ namespace WindowsFormsApp1
             conn.Close();
             display_data();
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = conn;            // MessageBox.Show("St");
+
+            cmd.CommandText = "Update Complaint set AccountNo = '" + account.Text + "',Complaint = '" + complaints.Text + "',IsCompleted = '" + completed.Text + "' where ComplaintID='" + cidd.Text + "'";
+
+            cmd.ExecuteNonQuery();
+           
+
+           
+            MessageBox.Show("Data inserted");
+
+            conn.Close();
+            display_data();
         }
     }
 }
